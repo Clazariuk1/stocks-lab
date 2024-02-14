@@ -8,6 +8,7 @@ import Stocks from './pages/Stocks/Stocks'
 import Dashboard from './pages/Dashboard/Dashboard'
 
 export default function App(){
+    const [stocks, setStocks] = useState([])
         //getTodos
         const getStocks = async () => {
             try{

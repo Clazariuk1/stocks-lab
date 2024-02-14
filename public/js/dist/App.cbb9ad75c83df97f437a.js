@@ -30,6 +30,7 @@
 
 
 function App() {
+  const [stocks, setStocks] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]);
   //getTodos
   const getStocks = async () => {
     try {
@@ -143,7 +144,7 @@ function About(props) {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Stocks)
+/* harmony export */   "default": () => (/* binding */ Dashboard)
 /* harmony export */ });
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -151,7 +152,9 @@ function About(props) {
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 
-function Stocks(props) {
+function Dashboard(props) {
+  const [stocks, setStocks] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]);
+
   //getTodos
   const getStocks = async () => {
     try {
@@ -172,8 +175,6 @@ function Stocks(props) {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     getStocks();
   }, []);
-  const stocks = getStocks();
-  console.log(stocks);
   return /*#__PURE__*/React.createElement("div", {
     className: "stocks"
   }, stocks.map(stock => {
@@ -645,4 +646,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.a73007c332a7ee193cc949929cf785d1.js.map
+//# sourceMappingURL=App.53ad6b992450e0ae8564b6d57d40e293.js.map

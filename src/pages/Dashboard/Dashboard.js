@@ -3,7 +3,9 @@ import { useState, useEffect } from 'react'
 
 
 
-export default function Stocks (props) {
+export default function Dashboard (props) {
+    const [stocks, setStocks] = useState([])
+
         //getTodos
         const getStocks = async () => {
             try{
@@ -24,8 +26,6 @@ export default function Stocks (props) {
         useEffect(() => {
             getStocks()
         }, [])
-        const stocks = getStocks()
-        console.log(stocks)
   return (
     <div className="stocks">
       {stocks.map((stock) => {
