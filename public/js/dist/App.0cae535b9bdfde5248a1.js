@@ -223,18 +223,10 @@ function Home(props) {
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 
-function Stocks(props) {
+function Stocks(stock) {
   return /*#__PURE__*/React.createElement("div", {
     className: "stock"
-  }, currencies.map(stock => {
-    const {
-      name,
-      symbol
-    } = stock;
-    return /*#__PURE__*/React.createElement("div", {
-      className: "stock"
-    }, /*#__PURE__*/React.createElement("h2", null, "Name: ", props.stock.name), /*#__PURE__*/React.createElement("h2", null, "Price: ", props.stock.price));
-  }));
+  }, /*#__PURE__*/React.createElement("h2", null, "Name: ", props.stock.name), /*#__PURE__*/React.createElement("h2", null, "Price: ", props.stock.price));
 }
 ;
 
@@ -646,4 +638,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.53ad6b992450e0ae8564b6d57d40e293.js.map
+//# sourceMappingURL=App.104a73fe76b7d8dc685156d3368a9314.js.map
